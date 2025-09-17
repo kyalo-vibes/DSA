@@ -1,3 +1,5 @@
+// Summary of methods: split, join, push, length, regex, concat, +=, includes
+
 // Let and const with arrays
 let sampleArray: number[] = [1,2,3] 
 const anotherArray: number[] = [1,7]
@@ -41,4 +43,33 @@ while (left < right) {
     // console.log(left)
 }
 console.log(arr)  
+
+// Array methods
+const charArray: string[] = ['K', 'y', 'a', 'l', 'o']
+console.log("Join character array to string: ", charArray.join(''))
+const strArray: string[] = ["My", "name", "is", "Kevin", "Kyalo"]
+console.log("Join string array to sentence: ", strArray.join(' '))
+
+// equivalent of append in python, adding string to a string, use += or concat
+let firstBit: string = "Ke"
+const secondBit: string = "vin"
+firstBit += secondBit
+// firstBit = firstBit.concat(secondBit)
+console.log("Combine two strings: ", firstBit)
+
+// includes method 
+const vowels: string[] = ['a','e','i','o','u']
+const randomValue: string = "random"
+const randomCharArray: string[] = randomValue.split('')
+for (const randomChar of randomCharArray) {
+    console.log("Is character a vowel: ", randomChar, " - " , vowels.includes(randomChar))
+}
+
+// regex for alphanumeric
+const regexValue: string = "random :,"
+const regexCharArray: string[] = regexValue.split('')
+for (const regexChar of regexCharArray) {
+    console.log("Is character alphanumeric: ", regexChar, " = ", /^[a-zA-Z0-9]+/.test(regexChar))
+}
+
 

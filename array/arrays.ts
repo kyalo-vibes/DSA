@@ -77,4 +77,15 @@ const whitespaceValue: string = "  random   value  "
 const whitespaceCharArray: string[] = whitespaceValue.trim().split(/\s+/)
 console.log(whitespaceCharArray)
 
+// sort an array
+// ascending
+let ascendingArr: number[] = [1,3,9,4,5,2,7]
+ascendingArr.sort((a, b) => a - b)
+console.log("Ascending array is ", ascendingArr)
+
+//descending
+let descendingArr: number[] = [1,3,9,4,5,2,7]
+descendingArr.sort((a, b) => b - a)
+console.log("Descending array is ", descendingArr)
+
 

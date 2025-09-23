@@ -72,4 +72,9 @@ for (const regexChar of regexCharArray) {
     console.log("Is character alphanumeric: ", regexChar, " = ", /^[a-zA-Z0-9]+/.test(regexChar))
 }
 
+//regex for any number of whitespaces
+const whitespaceValue: string = "  random   value  "
+const whitespaceCharArray: string[] = whitespaceValue.trim().split(/\s+/)
+console.log(whitespaceCharArray)
+
 
